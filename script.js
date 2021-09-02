@@ -101,10 +101,6 @@ if (dolphinsBonus2 && koalasBonus2 >= 100 && dolphinsBonus2 === koalasBonus2) {
 // restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and
 // 300. If the value is different, the tip is 20%.
 // Your tasks:
-// 1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for
-// this. It's not allowed to use an if/else statement � (If it's easier for you, you can
-// start with an if/else statement, and then try to convert it to a ternary
-// operator!)
 // 2. Print a string to the console containing the bill value, the tip, and the final value
 // (bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value
 // 316.25”
@@ -115,14 +111,23 @@ if (dolphinsBonus2 && koalasBonus2 >= 100 && dolphinsBonus2 === koalasBonus2) {
 // § Value X is between 50 and 300, if it's >= 50 && <= 300 �
 // GOOD LUCK
 
+// 1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for
+// this. It's not allowed to use an if/else statement � (If it's easier for you, you can
+// start with an if/else statement, and then try to convert it to a ternary
+// operator!)
 
-let bill = 10;
-let tip = 0;
+
 //if else//
-// if (bill >= 50 && bill <= 300) {
-//     tip = bill * 0.15
-// } else tip = bill * 0.2
-// console.log(tip)
+const bill0 = 275;
+let tip0 = 0;
+// if (bill0 >= 50 && bill0 <= 300) {
+//     tip0 = bill0 * 0.15
+// } else tip0 = bill0 * 0.2
+// console.log(tip0)
+
+
 //ternary operation//
-bill >= 50 && bill <= 300 ? tip = bill * 0.15 : tip = bill * 0.2;
-console.log(tip)
+const bill1 = 10;
+let tip1 = bill1 >= 50 && bill1 <= 300 ? bill1 * 0.15 : bill1 * 0.2;
+console.log(`The bill was ${bill1} , the tip was ${tip1} and the total value was ${bill1 + tip1}`)
+
