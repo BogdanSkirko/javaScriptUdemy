@@ -84,7 +84,7 @@ const mark = {
     name: 'Mark',
     lastName: 'Miller',
     mass: 78,
-    heigth: 1.69    ,
+    heigth: 1.69,
 
     calcBmi: function () {
         this.bmi = this.mass / this.heigth ** 2
@@ -105,5 +105,4 @@ mark.calcBmi();
 john.calcBmi();
 if (mark.bmi > john.bmi) {
     console.log(`${mark.name + mark.lastName} Bmi's ${mark.bmi} is higher than Jonh's Bmi's ${john.bmi}`);
-}
-else console.log(`Jonh's ${john.bmi} is higher than Marks Bmi's ${mark.bmi}`);
+} else console.log(`Jonh's ${john.bmi} is higher than Marks Bmi's ${mark.bmi}`);
