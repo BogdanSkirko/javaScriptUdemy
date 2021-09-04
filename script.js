@@ -118,6 +118,20 @@ if (mark.bmi > john.bmi) {
 // Hints: Call ‘calcTip ‘in the loop and use the push method to add values to the
 // tips and totals arrays �
 // Bonus:
+
+const bills1 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips1 = [];
+const totals1 = [];
+
+for (let i = 0; i < bills1.length; i++) {
+    tips1.push(calcTip(bills1[i]))
+    const tip = calcTip(bills1[i]);
+    totals1.push(bills1[i] + tip);
+}
+console.log(totals1);
+
+
+
 // 4. Bonus: Write a function 'calcAverage' which takes an array called 'arr' as
 // an argument. This function calculates the average of all numbers in the given
 // array. This is a difficult challenge (we haven't done this before)! Here is how to
@@ -130,13 +144,12 @@ if (mark.bmi > john.bmi) {
 // 4.2. To calculate the average, divide the sum you calculated before by the
 // length of the array (because that's the number of elements)
 // 4.3. Call the function with the 'totals' array
-const bills1 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const tips1 = [];
-const totals1 = [];
-
-for (let i = 0; i < bills1.length; i++) {
-    tips1.push(calcTip(bills1[i]))
-    const tip = calcTip(bills1[i]);
-    totals1.push(bills1[i] + tip);
+function calcAverage3(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i] / arr.length;
+    }
+    return sum
 }
-console.log(totals1);
+
+console.log(calcAverage3(totals1));
